@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story template</title>
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Albert Sans', sans-serif;
+            text-rendering: optimizeLegibility;
+            background-color: white;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+        }
+
+        a {
+            color: #0000EE;
+        }
+
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            padding-bottom: 1.2em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Tinos', Georgia, serif;
+            font-size: 3em;
+            line-height: 1.1;
+            text-align: center;
+            font-weight: 500;
+            text-rendering: optimizeLegibility;
+        }
+
+        .subhead {
+            font-family: 'Albert Sans', sans-serif;
+            text-align: left;
+            margin-top: 0.5em;
+
+
+        }
+
+        .byline {
+            font-family: 'Albert Sans', sans-serif;
+            font-size: 1em;
+            text-align: left;
+            margin-top: 0.5em;
+            font-weight: 500;
+        }
+
+        .full-width {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            margin: auto;
+
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+            object-fit: cover;
+
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fffbaf;
+            font-size: 0.85em;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+    </style>
+
+
+
+    <!-- Scrolly stuff -->
+
+    <style>
+        .scrolly-container {
+            position: relative;
+            margin-bottom: 1.2em;
+        }
+
+        .sticky-thing {
+            position: sticky;
+            top: 0;
+            transform: translate(0px, 0px);
+            z-index: 0;
+            height: 100svh;
+            width: 100vw;
+            margin: 0;
+            overflow: hidden;
+            /* Center everything inside */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .sticky-thing>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .scrolly-container video {
+            position: absolute;
+            top: 0;
+            height: auto;
+            width: 100%;
+        }
+
+        .sticky-thing iframe {
+            position: absolute;
+            top: 0;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+
+        .steps-container {
+            transform: translate3d(0, 0, 0);
+            position: relative;
+            padding: 0;
+            z-index: 10;
+            max-width: 35rem;
+            margin: 0 auto;
+            padding-bottom: 4em;
+        }
+
+        .step {
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50svh;
+            transform: translate(0px, 0px);
+        }
+
+        .step p {
+            text-align: left;
+        }
+
+        .step p:last-child {
+            padding: 0;
+        }
+
+        .step>* {
+            width: 700px;
+            margin-left: 1.3em;
+            margin-right: 1.3em;
+            text-align: center;
+            padding: 1.2em !important;
+            background-color: #87d6c3cc;
+        }
+
+        .sticky-thing>canvas {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* When it's less than 700 pixels wide, do normal scrollytelling */
+
+        @media only screen and (min-width: 700px) {
+            .scrolly-container.side-by-side {
+                display: flex;
+            }
+
+            .scrolly-container.side-by-side>div {
+                flex-basis: 0;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 0.75em;
+            }
+
+            .scrolly-container.side-by-side .scrolly-overlay {
+                margin-top: 70vh;
+                order: 0;
+                /* Change these to adjust sizing options */
+                min-width: 15rem;
+                max-width: 20rem;
+            }
+
+            .scrolly-container.side-by-side .sticky-thing {
+                order: 1;
+                flex-grow: 2;
+            }
+        }
+    </style>
+    <link href="scrolly-styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Nearly A Decade after the Philippines' Legal Victory, Beijing continues to Militarize Islands in the
+                South China Sea</h1>
+            <div class="byline">
+                <p>By Katrina Ventura</p>
+            </div>
+        </div>
+    </div>
+
+    <figure><img src="military-bases.png"></figure>
+
+    <div class="content">
+        <p>In 2016, the Permanent Court of Arbitration in The Hague ruled in favor of the Philippines in a case against
+            China's territorial claims in the South China Sea. The court found that China's claims to the area were
+            invalid under the United Nations Convention on the Law of the Sea (UNCLOS), which both countries are
+            signatories to. The ruling was a major victory for the Philippines, which had been locked in a territorial
+            dispute with China over the area for years.</p>
+    </div>
+
+    <div class="content">
+        <p>However, nearly a decade after the ruling, China continues to militarize artificial islands in the South
+            China Sea, raising concerns among its neighbors and the international community. Satellite images show that
+            China has built military facilities on several of the islands, including airstrips, radar systems, and
+            missile launchers. The militarization of the islands has increased tensions in the region and raised fears
+            of a potential conflict between China and its neighbors, including the Philippines.
+        </p>
+    </div>
+
+    <br></br>
+    <div class="full-width" <figure><img src="map.png"></figure>
+    </div>
+
+<br></br>
+    <div class="content">
+        <p>In 2016, the Permanent Court of Arbitration in The Hague ruled in favor of the Philippines in a case against
+            China's territorial claims in the South China Sea. The court found that China's claims to the area were
+            invalid under the United Nations Convention on the Law of the Sea (UNCLOS), which both countries are
+            signatories to. The ruling was a major victory for the Philippines, which had been locked in a territorial
+            dispute with China over the area for years.</p>
+    </div>
+
+    <div class="content">
+        <p>However, nearly a decade after the ruling, China continues to militarize artificial islands in the South
+            China Sea, raising concerns among its neighbors and the international community. Satellite images show that
+            China has built military facilities on several of the islands, including airstrips, radar systems, and
+            missile launchers. The militarization of the islands has increased tensions in the region and raised fears
+            of a potential conflict between China and its neighbors, including the Philippines.
+        </p>
+    </div>
+
+    <section id="scrolly-images" class="scrolly-container">
+        <div class="sticky-thing">
+            <img src="cuarteron-1.png"> <!-- Updated image for step 1 -->
+        </div>
+        <div class="steps-container">
+            <div class="step" id="step1">
+                <div>
+                    <p>Cuarteron Reef known locally as Calderon reef is outside the Philippines' exclusive economic zone
+                        but within its continental shelf.</p>
+                </div>
+            </div>
+            <div class="step" id="step2">
+                <div>
+                    <p>China's artificial island now covers 22.7 hectares of Calderon reef and includes a high-frequency
+                        radar which monitors surface and air traffic across the southern portion of the South China Sea.
+                    </p>
+                </div>
+            </div>
+            <!-- fiery -->
+            <div class="step" id="step3">
+                <div>
+                    <p>Fiery Cross Reef known locally as Kagitingan Reef is a submerged feature just outside the
+                        Philippines' exclusive economic zone but within its continental shelf.</p>
+                </div>
+            </div>
+            <div class="step" id="step4">
+                <div>
+                    <p>In 1987, China erected a weather station on Fiery Cross Reef to help UNESCO's global oceanic
+                        survey, only to transform it into a military outpost with a 3-kilometer airstrip.</p>
+                </div>
+            </div>
+            <!-- gaven -->
+            <div class="step" id="step5">
+                <div>
+                    <p>Gaven Reef known locally as Burgos reef is a low-tide elevation located 354 nautical miles west
+                        of Palawan. It is just outside the Philippines' exclusive economic zone but within its
+                        continental shelf. </p>
+                </div>
+            </div>
+            <div class="step" id="step6">
+                <p>China has reclaimed 13.6 hectares of land on Gaven Reef and built a small garrison and a structure
+                    that may be an anti-aircraft tower.</p>
+            </div>
+            <!-- mischief -->
+            <div class="step" id="step7">
+                <div>
+                    <p>Mischief Reef known locally as Panganiban reef is a low-tide elevation within the Philippines'
+                        exclusive economic zone. Under UNCLOS, only the Philippines can exploit its natural resources or
+                        erect structures.</p>
+                </div>
+            </div>
+            <div class="step" id="step8">
+                <p>In 1995, China built octagonal huts on Mischief Reef which it claimed to be shelters for fishermen.
+                    Now it is one of the most militarized features in the Spratlys with missile arsenals, aircraft
+                    hangars, radar systems and other military facilities.</p>
+            </div>
+            <!-- subi -->
+            <div class="step" id="step9">
+                <div>
+                    <p>Subi Reef known locally as Zamora Reef is a low-tide elevation outside of the Philippines'
+                        exclusive economic zone but within its extended continental shelf. Under UNCLOS, only the
+                        Philippines can erect structures or create artificial islands on this reef.</p>
+                </div>
+            </div>
+            <div class="step" id="step10">
+                <p>China seized Subi Reef in 1988 and created a 394-hectare artificial island containing a 3-kilometer
+                    airstrip and a seaport.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <p>China's actions in the South China Sea have been met with criticism from the international community. But the
+            underlying consequence of China's militarization of the islands is on the marine environment. A 2023 <a
+                href="https://amti.csis.org/deep-blue-scars-environmental-threats-to-the-south-china-sea/">study</a> by
+            the Asia Maritime Transparency Initiative and the China Ocean Institute shows the ecological damage wrought
+            by island building, giant clam harvesting, and overfishing.</p>
+
+        <ul>
+            <li>Over 2,500 hectares of coral reef have been destroyed in the South China Sea</li>
+            <li>An additional 6,617 hectares were damaged by giant clam harvesting by Chinese fishers </li>
+            <li>While fisheries in have been overexploited with fish catch stagnating since the 1990's</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <p>Aside from the environmental impact, China continues to harass Philippine vessels in the South China Sea.</p>
+    </div>
+
+
+    <div class="video-container">
+        <video src="afp-video-4.mp4" preload="auto" tabindex="0" playsinline autoplay loop muted></video>
+    </div>
+
+    <div class="content">
+        <p>On March 23, 2024 Chinese coast guard ships hit Philippine supply vessel Unaizah May 4 with water cannons
+            causing injuries to Filipino navy crew members, and heavy damage to the wooden vessel, according to
+            Philippine officials.</p>
+
+        <p>The supply vessel was making its way to Ayungin Shoal, a low-tide elevation within the Philippines' exclusive
+            economic zone and continental shelf. </p>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p></p>
+        </div>
+    </div>
+
+
+
+    <script>
+        /*************
+        
+        This is the JavaScript that makes the scrolly work 
+        
+        *************/
+
+        /* 
+        This part attaches a scroll to the element with id="scrolly-images"    
+        */
+        (() => {
+            const scroller = scrollama()
+
+            scroller
+                .setup({
+                    parent: document.querySelector("#scrolly-images"),
+                    step: ".step",
+                    offset: 0.6,
+                    debug: false,
+                })
+                .onStepEnter(function ({ element, index, direction }) {
+                    const event = new CustomEvent("stepin", { detail: { direction: direction } })
+                    element.dispatchEvent(event)
+                })
+                .onStepExit(function ({ element, index, direction }) {
+                    const event = new CustomEvent("stepout", { detail: { direction: direction } })
+                    if (direction === "up" && element.previousElementSibling) {
+                        const event = new CustomEvent("stepin", { detail: { direction: direction } })
+                        element.previousElementSibling.dispatchEvent(event)
+                    }
+                })
+
+            window.addEventListener("resize", scroller.resize)
+        })()
+
+        /*
+        This part sets up your actions. In this case, it's changing the image in the scrolly container.
+        */
+        document.addEventListener("DOMContentLoaded", function () {
+            // JavaScript code here
+            d3.select("#step1").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "cuarteron-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step2").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "cuarteron-2.png"); // Change image for step 2
+            });
+
+            // For the section with fiery images
+            d3.select("#step3").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "fiery-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step4").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "fiery-2.png"); // Change image for step 2
+            });
+            // For the section with gaven images
+            d3.select("#step5").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "gaven-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step6").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "gaven-2.png"); // Change image for step 2
+            });
+            // For the section with mischief images
+            d3.select("#step7").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "mischief-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step8").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "mischief-2.png"); // Change image for step 2
+            });
+            // For the section with subi images
+            d3.select("#step9").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "subi-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step10").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "subi-2.png"); // Change image for step 2
+            });
+
+        });
+    </script>
+    <style>
+        /* Change this to adjust the padding between steps */
+        .step {
+            margin-bottom: 100vh;
+
+        }
+    </style>
+
+
+</body>
+
+</html>
