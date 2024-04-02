@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<NetworkLink>
+	<name>Maritime Boundaries v12</name>
+	<description><![CDATA[Flanders Marine Institute (2023). Maritime Boundaries Geodatabase: Maritime Boundaries and Exclusive Economic Zones (200NM), version 12. Available online at <a href="http://www.marineregions.org">http://www.marineregions.org</a> https://doi.org/10.14284/632. Consulted on YYYY-MM-DD.]]></description>
+	<Link>
+		<href>http://geo.vliz.be/geoserver/gwc/service/kml/MarineRegions:eez_boundaries.png.kml</href>
+	</Link>
+</NetworkLink>
+</kml>

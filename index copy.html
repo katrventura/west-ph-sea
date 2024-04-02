@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>West Philippine Sea</title>
+
+    <meta property="og:title" content="West Philippine Sea">
+    <meta property="og:description" content="Nearly A Decade after the Philippines' Legal Victory, Beijing continues to Militarize Islands in the
+    South China Sea">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="military-bases.png">
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Albert Sans', sans-serif;
+            text-rendering: optimizeLegibility;
+            background-color: white;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+        }
+
+        a {
+            color: #0000EE;
+        }
+
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            padding-bottom: 1.2em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Tinos', Georgia, serif;
+            font-size: 3em;
+            line-height: 1.1;
+            text-align: center;
+            font-weight: 500;
+            text-rendering: optimizeLegibility;
+        }
+
+        .subhead {
+            font-family: 'Albert Sans', sans-serif;
+            text-align: left;
+            margin-top: 0.5em;
+
+
+        }
+
+        .byline {
+            font-family: 'Albert Sans', sans-serif;
+            font-size: 1em;
+            text-align: left;
+            margin-top: 0.5em;
+            font-weight: 500;
+        }
+
+        .full-width {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            margin: auto;
+
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+            object-fit: cover;
+
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fffbaf;
+            font-size: 0.85em;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+    </style>
+
+
+
+    <!-- Scrolly stuff -->
+
+    <style>
+        .scrolly-container {
+            position: relative;
+            margin-bottom: 1.2em;
+        }
+
+        .sticky-thing {
+            position: sticky;
+            top: 0;
+            transform: translate(0px, 0px);
+            z-index: 0;
+            height: 100svh;
+            width: 100vw;
+            margin: 0;
+            overflow: hidden;
+            /* Center everything inside */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .sticky-thing>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .scrolly-container video {
+            position: absolute;
+            top: 0;
+            height: auto;
+            width: 100%;
+        }
+
+        .sticky-thing iframe {
+            position: absolute;
+            top: 0;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+
+        .steps-container {
+            transform: translate3d(0, 0, 0);
+            position: relative;
+            padding: 0;
+            z-index: 10;
+            max-width: 35rem;
+            margin: 0 auto;
+            padding-bottom: 4em;
+        }
+
+        .step {
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50svh;
+            transform: translate(0px, 0px);
+            opacity: 0.8;
+        }
+
+        .step p {
+            text-align: left;
+        }
+
+        .step p:last-child {
+            padding: 0;
+        }
+
+        .step>* {
+            width: 700px;
+            margin-left: 1.3em;
+            margin-right: 1.3em;
+            text-align: center;
+            padding: 1.2em !important;
+            background-color: white;
+        }
+
+        .sticky-thing>canvas {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* When it's less than 700 pixels wide, do normal scrollytelling */
+
+        @media only screen and (min-width: 700px) {
+            .scrolly-container.side-by-side {
+                display: flex;
+            }
+
+            .scrolly-container.side-by-side>div {
+                flex-basis: 0;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 0.75em;
+            }
+
+            .scrolly-container.side-by-side .scrolly-overlay {
+                margin-top: 70vh;
+                order: 0;
+                /* Change these to adjust sizing options */
+                min-width: 15rem;
+                max-width: 20rem;
+            }
+
+            .scrolly-container.side-by-side .sticky-thing {
+                order: 1;
+                flex-grow: 2;
+            }
+        }
+    </style>
+    <link href="scrolly-styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+
+    <!-- Ai2html stuff -->
+    <style>
+        #scrolly {
+            position: relative;
+            padding: 1rem;
+        }
+
+        .scrolly-overlay {
+            position: relative;
+            padding: 0;
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+
+        .sticky-thing {
+            position: sticky;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 0;
+            top: 0;
+            height: 100vh;
+            /* Center everything inside */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .step {
+            margin: 0 auto 2rem auto;
+            margin-bottom: 25rem;
+            background-color: #eee;
+            background-color: #fff;
+            color: black;
+        }
+
+        .step p {
+            text-align: left;
+            padding: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        /* When it's less than 700 pixels wide, do normal scrollytelling */
+        @media only screen and (min-width: 700px) {
+            #scrolly.side-by-side {
+                display: flex;
+            }
+
+            #scrolly.side-by-side>div {
+                flex-basis: 0;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 0.75em;
+            }
+
+            #scrolly.side-by-side .scrolly-overlay {
+                margin-top: 70vh;
+                order: 0;
+                /* Change these to adjust sizing options */
+                min-width: 15rem;
+                max-width: 20rem;
+            }
+
+            #scrolly.side-by-side .sticky-thing {
+                order: 1;
+                flex-grow: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Nearly A Decade after the Philippines' Legal Victory, Beijing continues to Militarize Islands in the
+                South China Sea</h1>
+            <div class="byline">
+                <p>By Katrina Ventura</p>
+            </div>
+        </div>
+    </div>
+
+    <figure><img src="military-bases.png"></figure>
+
+    <div class="content">
+        <p>In the early morning of March 23, 2024, crew members aboard a military-contracted supply vessel Unaizah May 4
+            (UM4) were making their way to a submerged reef in the Spratly Island of the South China Sea for another
+            resupply mission. Second Thomas Shoal, known locally as Ayungin Shoal, lies 105 nautical miles west of
+            Palawan island in the Philippines.</p>
+
+        <p>The shoal is home to a small contingent of Filipino marines who have been stationed there since 1999 in a
+            moored, rusting, second world war-era ship, called BRP Sierra Madre. The marines are tasked with guarding
+            the reef which is claimed by both the Philippines and China.</p>
+
+        <p>But on the way to the routine rotation and resupply mission to Ayungin Shoal, the crew of UM4 were met with
+            unprovoked aggression and maneuvers of the Chinese Coast Guard. Video released by the Armed Forces of the
+            Philippines shows the supply vessel being fired on by water cannons by two Chinese Coast Guard Ships.</p>
+    </div>
+    <div class="video-container">
+        <video src="afp-video-4.mp4" preload="auto" tabindex="0" playsinline autoplay loop muted></video>
+        <figcaption>Video released on the Official Facebook <a
+                href="https://www.facebook.com/armedforcesofthephilippines/posts/pfbid0C53h5eg4W5GzKnw5osdvGBfMPcY9efeqh6ENcmVMxUqUKukT6QVoX6b21nom3Qmnl">page</a>
+            of the Armed Forces of the Philippines</figcaption>
+    </div>
+
+    <br></br>
+    <div class="content">
+        <p>The unprovoked attack from China caused severe damaged to the supply vessel and injuries to at least four
+            Filipino crew members.</p>
+
+        <p>Chinese navy and coastguard vessels continue to patrol the Spratly Islands in the West Philippine sea,
+            harassing Filipino troops using military-grade lasers, and now water cannons.</p>
+
+        <p>In 2016, the Permanent Court of Arbitration in The Hague ruled in favor of the Philippines in a case against
+            China's territorial claims in the South China Sea. The court found that China's claims to the area were
+            invalid under the United Nations Convention on the Law of the Sea (UNCLOS), which both countries are
+            signatories to. The ruling was a major victory for the Philippines, which had been locked in a territorial
+            dispute with China over the area for years.</p>
+
+    </div>
+
+    <section id="scrolly">
+        <div class="sticky-thing">
+            <div class="ai2html-container">
+
+                <!-- ai2html goes below this line -->
+
+
+
+
+
+                <!-- Generated by ai2html v0.120.0 - 2024-04-02 16:48 -->
+                <!-- ai file: islands.ai -->
+                <style media="screen,print">
+                    #g-islands-box,
+                    #g-islands-box .g-artboard {
+                        margin: 0 auto;
+                    }
+
+                    #g-islands-box p {
+                        margin: 0;
+                    }
+
+                    #g-islands-box .g-aiAbs {
+                        position: absolute;
+                    }
+
+                    #g-islands-box .g-aiImg {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        width: 100% !important;
+                    }
+
+                    #g-islands-box .g-aiSymbol {
+                        position: absolute;
+                        box-sizing: border-box;
+                    }
+
+                    #g-islands-box .g-aiPointText p {
+                        white-space: nowrap;
+                    }
+
+                    #g-islands-Artboard_1 {
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    #g-islands-Artboard_2 {
+                        position: relative;
+                        overflow: hidden;
+                    }
+                </style>
+
+                <div id="g-islands-box" class="ai2html">
+
+                    <!-- Artboard: Artboard_1 -->
+                    <div id="g-islands-Artboard_1" class="g-artboard" style="width:800px; height:1080px;"
+                        data-aspect-ratio="0.741" data-min-width="800">
+                        <div style=""></div>
+                        <img id="g-islands-Artboard_1-img" class="g-islands-Artboard_1-img g-aiImg" alt=""
+                            src="islands-Artboard_1.jpg" />
+                        <!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg class="g-islands-Artboard_1-interactions-img g-aiImg" version="1.2" baseProfile="tiny"
+                            id="g-islands-Artboard_1-interactions-img" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 1080"
+                            overflow="visible" xml:space="preserve">
+                            <g>
+                                <g id="nine-dash-1" data-name="nine-dash-1">
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M508.827,195.026
+			c-6.675,8.293-14.394,16.987-23.288,25.742c-4.286,4.219-8.534,8.146-12.702,11.798" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M421.468,310.544
+			c-3.804,4.503-8.278,10.621-12.308,18.437c-3.965,7.688-6.35,14.789-7.828,20.458" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M398.526,404.669
+			c1.083,6.85,1.96,14.421,2.428,22.626c0.538,9.444,0.443,18.139,0,25.924" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M185.665,869.953
+			c-4.974,1.571-11.348,3.03-18.826,3.424c-14.118,0.744-25.477-2.662-32.342-5.38" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M31.162,722.265
+			c2.878,7.434,7.39,16.952,14.517,26.945c6.453,9.049,13.182,15.868,18.779,20.782" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M97.953,538.092
+			c-3.303,5.035-6.602,10.513-9.796,16.446c-8.423,15.647-14.023,30.574-17.816,43.625" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10" d="M70.165,406.119
+			c6.931,15.371,15.914,31.552,27.646,47.659c1.869,2.566,3.754,5.057,5.65,7.474" />
+
+                                    <line fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10"
+                                        x1="316.691" y1="700.265" x2="289.533" y2="746.622" />
+
+                                    <line fill="none" stroke="#C1272D" stroke-width="3" stroke-miterlimit="10"
+                                        x1="401.146" y1="544.708" x2="381.48" y2="593.844" />
+                                </g>
+                                <path id="eez-1" style="opacity:0.1;" fill="#29ABE2" stroke="#CCCCCC" stroke-width="2"
+                                    stroke-miterlimit="10" d="M430.153,267.344
+		c-8.04,16.456-21.519,39.361-43.476,62.075c-19.638,20.316-39.425,33.617-54.345,42.051c-3.234,13.027-6.024,27.418-7.905,43.052
+		c-4.956,41.211-1.924,77.234,2.964,105.127c-8.893,16.019-17.786,32.039-26.678,48.058c-16.28,12.863-37.186,32.33-56.321,60.073
+		c-13.295,19.276-22.387,37.691-28.654,53.064c16.217,15.437,40.018,34.533,72.13,50.061c18.503,8.947,35.835,14.808,50.757,18.726
+		c10.089,7.441,20.177,14.882,30.266,22.324l-4.94,23.028l54.345,27.033l1.976,11.013l-20.75,18.022l35.571,57.069
+		c23.998-0.498,59.052-3.963,98.808-18.022c38.897-13.755,67.981-32.587,86.951-47.057c4.611,0.334,9.222,0.667,13.833,1.001
+		l62.249-54.065l72.13,1.001l18.774-50.061L756.22,543.679l-47.428-96.116l-47.428-47.057l-17.786-150.182L498.33,206.271
+		L430.153,267.344z" />
+
+                                <path id="baseline-1" data-name="baseline-1" fill="none" stroke="#29ABE2"
+                                    stroke-width="4" stroke-miterlimit="10" d="
+		M497.108,223.562l-20.012,72.42l-21.918,26.071l-6.671,39.59l-20.012,48.28l12.388,93.663l-4.765,56.97l-43.835,89.801
+		l-54.317,53.108l-2.859,16.415l-7.624,2.897l-1.906,12.553l13.155,10.684l44.136,24.498l-15.743,21.934l13.213,8.546l3.373-2.279
+		l44.618,10.996l3.784,24.153c1.135,3.067,1.135,3.067,1.135,3.067l-26.863,10.351v6.134l7.189,6.134l53.726-30.287l11.729-21.086
+		l29.133-1.534l15.513-24.536l69.874,4.566l39.321,25.481l31.548-37.527l14.369-36.221l-18.941-104.621l-21.032-75.517
+		l-17.598-19.157l-28.552-52.237l-46.397-11.653l-27.362-68.712l8.328-32.146l-19.828-111.707L497.108,223.562z" />
+                            </g>
+                            <style>
+                                #g-islands-Artboard_1-interactions-img rect,
+                                #g-islands-Artboard_1-interactions-img circle,
+                                #g-islands-Artboard_1-interactions-img path,
+                                #g-islands-Artboard_1-interactions-img line,
+                                #g-islands-Artboard_1-interactions-img polyline,
+                                #g-islands-Artboard_1-interactions-img polygon {
+                                    vector-effect: non-scaling-stroke;
+                                }
+                            </style>
+                        </svg>
+
+                    </div>
+
+                    <!-- Artboard: Artboard_2 -->
+                    <div id="g-islands-Artboard_2" class="g-artboard" style="max-width: 400px;max-height: 514px"
+                        data-aspect-ratio="0.779" data-min-width="0" data-max-width="799">
+                        <div style="padding: 0 0 128.4346% 0;"></div>
+                        <img id="g-islands-Artboard_2-img" class="g-islands-Artboard_2-img g-aiImg" alt=""
+                            src="islands-Artboard_2.jpg" />
+                        <!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg class="g-islands-Artboard_2-interactions-img g-aiImg" version="1.2" baseProfile="tiny"
+                            id="g-islands-Artboard_2-interactions-img" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 513.738"
+                            overflow="visible" xml:space="preserve">
+                            <g>
+                                <g id="nine-dash-2" data-name="nine-dash-2">
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M256.126,92.985
+			c-3.117,3.822-6.722,7.829-10.875,11.864c-2.001,1.944-3.985,3.754-5.932,5.438" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M215.33,146.224
+			c-1.776,2.075-3.866,4.895-5.748,8.497c-1.851,3.543-2.966,6.816-3.656,9.429" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M204.616,189.604
+			c0.506,3.157,0.915,6.646,1.134,10.428c0.251,4.353,0.207,8.36,0,11.948" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M105.21,404.043
+			c-2.323,0.724-5.3,1.396-8.792,1.578c-6.593,0.343-11.898-1.227-15.104-2.48" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M33.057,335.977
+			c1.344,3.426,3.451,7.813,6.779,12.418c3.014,4.17,6.156,7.313,8.77,9.578" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M64.248,251.096
+			c-1.542,2.32-3.083,4.845-4.575,7.58c-3.934,7.211-6.549,14.091-8.32,20.106" />
+                                    <path fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10" d="M51.271,190.273
+			c3.237,7.084,7.432,14.541,12.911,21.965c0.873,1.183,1.753,2.33,2.639,3.445" />
+
+                                    <line fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10"
+                                        x1="166.399" y1="325.837" x2="153.716" y2="347.202" />
+
+                                    <line fill="none" stroke="#C1272D" stroke-width="2" stroke-miterlimit="10"
+                                        x1="205.839" y1="254.145" x2="196.655" y2="276.791" />
+                                </g>
+                                <path id="eez-2" style="opacity:0.1;" fill="#29ABE2" stroke="#CCCCCC" stroke-width="2"
+                                    stroke-miterlimit="10" d="M219.385,126.315
+		c-3.755,7.584-10.05,18.14-20.303,28.609c-9.171,9.363-18.411,15.493-25.379,19.38c-1.51,6.004-2.813,12.636-3.691,19.842
+		c-2.315,18.993-0.899,35.595,1.384,48.451c-4.153,7.383-8.306,14.766-12.459,22.149c-7.603,5.928-17.366,14.9-26.302,27.686
+		c-6.209,8.884-10.455,17.371-13.382,24.456c7.573,7.114,18.688,15.916,33.685,23.072c8.641,4.123,16.735,6.825,23.703,8.63
+		c4.711,3.429,9.423,6.859,14.134,10.288l-2.307,10.613l25.379,12.459l0.923,5.076l-9.69,8.306l16.612,26.302
+		c11.207-0.23,27.577-1.827,46.143-8.306c18.165-6.339,31.747-15.019,40.606-21.687c2.153,0.154,4.307,0.308,6.46,0.461
+		l29.07-24.917l33.685,0.461l8.767-23.072l-14.766-90.903l-22.149-44.298l-22.149-21.687l-8.306-69.215l-67.831-20.303
+		L219.385,126.315z" />
+
+                                <path id="baseline-2" data-name="baseline-2" fill="none" stroke="#29ABE2"
+                                    stroke-width="2" stroke-miterlimit="10" d="
+		M250.653,106.137l-9.345,33.377l-10.235,12.016l-3.115,18.246l-9.345,22.251l5.785,43.167l-2.225,26.256l-20.471,41.387
+		l-25.366,24.476L175,334.878l-3.56,1.335l-0.89,5.785l6.143,4.924l20.612,11.29l-7.352,10.109l6.17,3.939l1.575-1.05l20.837,5.068
+		l1.767,11.132c0.53,1.414,0.53,1.414,0.53,1.414l-12.545,4.771v2.827l3.357,2.827l25.09-13.959l5.477-9.718l13.605-0.707
+		l7.244-11.308l32.631,2.104l18.363,11.744l14.733-17.295l6.71-16.693l-8.846-48.217l-9.822-34.804l-8.218-8.829l-13.334-24.075
+		l-21.667-5.371l-12.778-31.668l3.889-14.815l-9.26-51.483L250.653,106.137z" />
+                            </g>
+                            <style>
+                                #g-islands-Artboard_2-interactions-img rect,
+                                #g-islands-Artboard_2-interactions-img circle,
+                                #g-islands-Artboard_2-interactions-img path,
+                                #g-islands-Artboard_2-interactions-img line,
+                                #g-islands-Artboard_2-interactions-img polyline,
+                                #g-islands-Artboard_2-interactions-img polygon {
+                                    vector-effect: non-scaling-stroke;
+                                }
+                            </style>
+                        </svg>
+
+                    </div>
+
+                    <!-- Custom HTML -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+                    <style>
+                        .hidden {
+                            visibility: hidden;
+                        }
+                    </style>
+
+                </div>
+
+                <!-- End ai2html - 2024-04-02 16:48 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- ai2html goes above this line -->
+
+            </div>
+        </div>
+
+
+        <div class="scrolly-overlay">
+            <div class="step" id="step-zero">
+                <p>This is a map of the Philipppines. The <span style="background:#2dc78a; color:white;">green</span>
+                    dots are the nine natural islands/sandbars/reefs in the Spratlys which the Philippines holds. While
+                    the <span style="background:#b52b26; color:white;">red</span> dots are the islands militarized by
+                    China.</p>
+            </div>
+            <div class="step" id="step-one">
+                <p>This is called the baseline. It is the <span style="background:#2aabe2; color:white;"">line</span> along the coast from which the seaward limits of a state's territorial sea and maritime zones of jurisdiction, such as the exclusive economic zone, are measured.</p>
+			</div>
+			<div class=" step" id="step-two">
+                        <p>This <span style="background:#ccd7df">area</span> shows the exclusive economic zone. It
+                            extends 200 nautical miles from the baseline and gives the Philippines exclusive sovereign
+                            rights to explore and exploit the natural resources within it.</p>
+            </div>
+            <div class="step" id="step-three">
+                <p>Meanwhile, this is the nine-dash <span style="background:#c1272d; color:white;"">line</span> used by the Chinese Communist Party to claim all territories in the South China Sea.</p>
+			</div>
+			<div class=" step" id="step-four">
+                        <p>In 2016, the international tribunal in The Hague ruled in favor of the Philippines and
+                            rejected China's all-encompassing line which it found to lack legal basis.</p>
+            </div>
+            <div class="step" id="step-five">
+                <p>Despite the ruling, China has continued to militarize the islands in the South China Sea, including
+                    those within the Philippines' exclusive economic zone.</p>
+            </div>
+
+    </section>
+
+
+    <script>
+
+        /* Scrollytelling code goes under here */
+        d3.select("#baseline-1").classed("hidden", true);
+        d3.select("#baseline-2").classed("hidden", true);
+
+        d3.select("#nine-dash-1").classed("hidden", true);
+        d3.select("#nine-dash-2").classed("hidden", true);
+
+
+        d3.select("#eez-1").classed("hidden", true);
+        d3.select("#eez-2").classed("hidden", true);
+
+
+        d3.select("#step-one").on('stepin', function (e) {
+            d3.select("#baseline-1").classed("hidden", false);
+            d3.select("#baseline-2").classed("hidden", false);
+        });
+
+        d3.select("#step-two").on('stepout', function (e) {
+            d3.select("#baseline-1").classed("hidden", true);
+            d3.select("#baseline-2").classed("hidden", true);
+        });
+
+        d3.select("#step-two").on('stepin', function (e) {
+            d3.select("#eez-1").classed("hidden", false);
+            d3.select("#eez-2").classed("hidden", false);
+        });
+
+        d3.select("#step-three").on('stepout', function (e) {
+            d3.select("#eez-1").classed("hidden", true);
+            d3.select("#eez-2").classed("hidden", true);
+        });
+
+        d3.select("#step-three").on('stepin', function (e) {
+            d3.select("#nine-dash-1").classed("hidden", false);
+            d3.select("#nine-dash-2").classed("hidden", false);
+        });
+
+
+
+        d3.select("#step-four").on('stepin', function (e) {
+            d3.select("#baseline-1").classed("hidden", false);
+            d3.select("#baseline-2").classed("hidden", false);
+
+            d3.select("#eez-1").classed("hidden", false);
+            d3.select("#eez-2").classed("hidden", false);
+        });
+
+        d3.select("#step-five").on('stepout', function (e) {
+            d3.select("#baseline-1").classed("hidden", true);
+            d3.select("#baseline-2").classed("hidden", true);
+
+            d3.select("#nine-dash-1").classed("hidden", true);
+            d3.select("#nine-dash-2").classed("hidden", true);
+
+            d3.select("#eez-1").classed("hidden", true);
+            d3.select("#eez-2").classed("hidden", true);
+        });
+
+    </script>
+
+
+    <script>
+        const scroller = scrollama();
+
+        scroller
+            .setup({
+                step: "#scrolly .scrolly-overlay .step",
+                offset: 0.75,
+                debug: false
+            })
+            .onStepEnter(function ({ element, index, direction }) {
+                const event = new CustomEvent('stepin', { detail: { direction: direction } })
+                element.dispatchEvent(event);
+            })
+            .onStepExit(function ({ element, index, direction }) {
+                const event = new CustomEvent('stepout', { detail: { direction: direction } })
+                element.dispatchEvent(event);
+            });
+
+        window.addEventListener("resize", scroller.resize);
+    </script>
+
+
+    <!-- ai2html resizer script -->
+
+    <script type="text/javascript">
+        (function () {
+            // only want one resizer on the page
+            if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+            document.documentElement.className += " g-resizer-v3-init";
+            // require IE9+
+            if (!("querySelector" in document)) return;
+            function resizer() {
+                var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                    widthById = {};
+                elements.forEach(function (el) {
+                    var parent = el.parentNode,
+                        width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                        minwidth = el.getAttribute("data-min-width"),
+                        maxwidth = el.getAttribute("data-max-width");
+                    widthById[parent.id] = width;
+
+                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                        el.style.display = "block";
+                    } else {
+                        el.style.display = "none";
+                    }
+                });
+                try {
+                    if (window.parent && window.parent.$) {
+                        window.parent.$("body").trigger("resizedcontent", [window]);
+                    }
+                    if (window.require) {
+                        require(['foundation/main'], function () {
+                            require(['shared/interactive/instances/app-communicator'], function (AppCommunicator) {
+                                AppCommunicator.triggerResize();
+                            });
+                        });
+                    }
+                } catch (e) { console.log(e); }
+            }
+
+            document.addEventListener('DOMContentLoaded', resizer);
+            // feel free to replace throttle with _.throttle, if available
+            window.addEventListener('resize', throttle(resizer, 200));
+
+            function throttle(func, wait) {
+                // from underscore.js
+                var _now = Date.now || function () { return new Date().getTime(); },
+                    context, args, result, timeout = null, previous = 0;
+                var later = function () {
+                    previous = _now();
+                    timeout = null;
+                    result = func.apply(context, args);
+                    if (!timeout) context = args = null;
+                };
+                return function () {
+                    var now = _now(), remaining = wait - (now - previous);
+                    context = this;
+                    args = arguments;
+                    if (remaining <= 0 || remaining > wait) {
+                        if (timeout) {
+                            clearTimeout(timeout);
+                            timeout = null;
+                        }
+                        previous = now;
+                        result = func.apply(context, args);
+                        if (!timeout) context = args = null;
+                    } else if (!timeout && options.trailing !== false) {
+                        timeout = setTimeout(later, remaining);
+                    }
+                    return result;
+                };
+            }
+
+
+        })();
+    </script>
+
+
+    <div class="content">
+        <p>The Philippines holds seven natural islands, sandbars, and two reefs in the Spratly Islands this includes
+            Ayungin Shoal. Ayungin Shoal cannot be subject of claim to territorial sovereignty by any state except the
+            Philippines.</p>
+
+        <p>Claims to other islands in the Spratlys remain unresolved.
+            While the landmark arbitral ruling has invalidated China's nine-dash line, claims to islands are territorial
+            or sovereignty claims to land that goes beyond the tribunal's jurisdiction. Taiwan and Vietnam are also
+            claiming the whole Spratly Islands, while portions are claimed by Malaysia, and Brunei.</p>
+
+        <p>According to maritime law expert Professor Jay Batongbacal, it is possible for the Philippines to lay claim
+            to the seabed around islands outside the EEZ as part of the country's Extended Continental Shelf. While
+            doing so won't affect the sovereignty claim, it does provide a legal basis for claiming the natural
+            resources of the seabed.</p>
+    </div>
+
+    <figure>
+        <img src="maritime-zones.jpg" alt="Maritime Zones by UNCLOS" />
+        <figcaption>Image courtesy of the NOAA Office of Ocean Exploration and Research.</figcaption>
+    </figure>
+
+    <div class="content">
+        <p>The United Nations Convention on the Law of the Sea (UNCLOS) defines the continental shelf as the part of the
+            seabed over which a coastal State exercises sovereign rights with regard to the exploration and exploitation
+            of natural resources, such as oil, gas deposits, minerals, and other biological resources.</p>
+
+        <p>This legal jurisdiction extends up to 200 nautical miles from the coastline, or beyond if the shelf naturally
+            extends farther.</p>
+
+        <p>Aside from the illegal presence of Chinese Maritime Militia vessels in the West Philippine Sea, Beijing
+            continues to militarize and build artificial islands in the Spratlys.</p>
+
+        <p>Satellite images from Google Earth Pro taken from 2014 and the present show the military facilities built by
+            China on several reefs in the Spratly Island namely: Cuarteron Reef, Fiery Cross Reef, Gaven Reefs, Mischief
+            Reef, and Subi Reef. China has built military facilities in these strategic areas including airstrips, radar
+            systems, and missile launchers.</p>
+    </div>
+
+    <section id="scrolly-images" class="scrolly-container">
+        <div class="sticky-thing">
+            <img src="cuarteron-1.png"> <!-- Updated image for step 1 -->
+            <figcaption>Satellite images generated on Google Earth Pro from 2014 and 2024.</figcaption>
+        </div>
+        <div class="steps-container">
+            <div class="step" id="step1">
+                <div>
+                    <p>Cuarteron Reef known locally as Calderon reef is outside the Philippines' exclusive economic zone
+                        but within its continental shelf.</p>
+                </div>
+            </div>
+            <div class="step" id="step2">
+                <div>
+                    <p>China's artificial island now covers 22.7 hectares of Calderon reef and includes a high-frequency
+                        radar which monitors surface and air traffic across the southern portion of the South China Sea.
+                    </p>
+                </div>
+            </div>
+            <!-- fiery -->
+            <div class="step" id="step3">
+                <div>
+                    <p>Fiery Cross Reef known locally as Kagitingan Reef is a submerged feature just outside the
+                        Philippines' exclusive economic zone but within its continental shelf.</p>
+                </div>
+            </div>
+            <div class="step" id="step4">
+                <div>
+                    <p>In 1987, China erected a weather station on Fiery Cross Reef to help UNESCO's global oceanic
+                        survey, only to transform it into a military outpost with a 3-kilometer airstrip.</p>
+                </div>
+            </div>
+            <!-- gaven -->
+            <div class="step" id="step5">
+                <div>
+                    <p>Gaven Reef known locally as Burgos reef is a low-tide elevation located 354 nautical miles west
+                        of Palawan. It is just outside the Philippines' exclusive economic zone but within its
+                        continental shelf. </p>
+                </div>
+            </div>
+            <div class="step" id="step6">
+                <p>China has reclaimed 13.6 hectares of land on Gaven Reef and built a small garrison and a structure
+                    that may be an anti-aircraft tower.</p>
+            </div>
+            <!-- mischief -->
+            <div class="step" id="step7">
+                <div>
+                    <p>Mischief Reef known locally as Panganiban reef is a low-tide elevation within the Philippines'
+                        exclusive economic zone. Under UNCLOS, only the Philippines can exploit its natural resources or
+                        erect structures.</p>
+                </div>
+            </div>
+            <div class="step" id="step8">
+                <p>In 1995, China built octagonal huts on Mischief Reef which it claimed to be shelters for fishermen.
+                    Now it is one of the most militarized features in the Spratlys with missile arsenals, aircraft
+                    hangars, radar systems and other military facilities.</p>
+            </div>
+            <!-- subi -->
+            <div class="step" id="step9">
+                <div>
+                    <p>Subi Reef known locally as Zamora Reef is a low-tide elevation outside of the Philippines'
+                        exclusive economic zone but within its extended continental shelf. Under UNCLOS, only the
+                        Philippines can erect structures or create artificial islands on this reef.</p>
+                </div>
+            </div>
+            <div class="step" id="step10">
+                <p>China seized Subi Reef in 1988 and created a 394-hectare artificial island containing a 3-kilometer
+                    airstrip and a seaport.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <p>China's actions in the South China Sea have been met with criticism from the international community. But the
+            underlying consequence of China's militarization of the islands is on the marine environment. A 2023 <a
+                href="https://amti.csis.org/deep-blue-scars-environmental-threats-to-the-south-china-sea/">study</a> by
+            the Asia Maritime Transparency Initiative and the China Ocean Institute shows the ecological damage wrought
+            by island building, giant clam harvesting, and overfishing.</p>
+
+        <ul>
+            <li>Over 2,500 hectares of coral reef have been destroyed in the South China Sea</li>
+            <li>An additional 6,617 hectares were damaged by giant clam harvesting by Chinese fishers </li>
+            <li>While fisheries in have been overexploited with fish catch stagnating since the 1990's</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <p>The Philippines has condemned China for its provocative actions against Filipino fishermen and crew members
+            and fought against the militarization of reefs within the exclusive economic zone and the extended
+            continental shelf. However, China refuses to recognize the arbitral win.</p>
+
+        <p>After the water cannon incident on March 23, China's Defense Ministry even accused the Philippines of
+            escalating the maritime disputes by undertaking provocative moves and spreading misinformation to mislead
+            the international community.</p>
+
+        <h3> About the data</h3>
+        <p>Below are the coordinates of the five reefs shown in the data project. These coordinates are based on the <a
+                href="https://amti.csis.org/island-tracker/china/">data</a> from the
+            Asia Maritime Transparency Initiative and the Center for Strategic and International Studies.</p>
+
+        <ul>
+            <li>Cuarteron Reef: 08° 51' 45" N, 112° 50' 15" E</li>
+            <li>Fiery Cross Reef: 9° 32' 45" N, 112° 53' 15" E</li>
+            <li>Gaven Reef: 10° 12' 24" N, 114° 13' 25" E</li>
+            <li>Mischief Reef: 09° 54' 00" N, 115° 32' 00" E</li>
+            <li>Subi Reef: 10° 55' 25" N, 114° 5' 5" E</li>
+        </ul>
+
+        <p>The full list of the coordinates of the island features, sandbars, and reefs held by the Philippines, as well
+            as the other island features militarized by China, can be found on this csv file saved on the GitHub
+            project.</p>
+
+        <p>The baseline coordinates used in the Philippine map are taken from Republic Act 9522 (2009). The maritime
+            zones are from the <a href="https://www.marineregions.org/eez.php">Flanders Maritime Boundaries
+                database</a>.</p>
+    </div>
+
+    <div class="content">
+        <p>For more information on the South China Sea disputes, you can visit the <a href="https://amti.csis.org/">Asia
+                Maritime Transparency Initiative</a> and the <a href="https://www.csis.org/">Center for Strategic and
+                International Studies</a>.</p>
+    </div>
+
+    <div class="footer">
+        <div class="content">
+            <p>View project on <a href="https://github.com/katrventura/west-ph-sea">GitHub</a></p>
+            <p>©2024 Katrina Ventura</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        /*************
+        
+        This is the JavaScript that makes the scrolly work 
+        
+        *************/
+
+        /* 
+        This part attaches a scroll to the element with id="scrolly-images"    
+        */
+        (() => {
+            const scroller = scrollama()
+
+            scroller
+                .setup({
+                    parent: document.querySelector("#scrolly-images"),
+                    step: ".step",
+                    offset: 0.6,
+                    debug: false,
+                })
+                .onStepEnter(function ({ element, index, direction }) {
+                    const event = new CustomEvent("stepin", { detail: { direction: direction } })
+                    element.dispatchEvent(event)
+                })
+                .onStepExit(function ({ element, index, direction }) {
+                    const event = new CustomEvent("stepout", { detail: { direction: direction } })
+                    if (direction === "up" && element.previousElementSibling) {
+                        const event = new CustomEvent("stepin", { detail: { direction: direction } })
+                        element.previousElementSibling.dispatchEvent(event)
+                    }
+                })
+
+            window.addEventListener("resize", scroller.resize)
+        })()
+
+        /*
+        This part sets up your actions. In this case, it's changing the image in the scrolly container.
+        */
+        document.addEventListener("DOMContentLoaded", function () {
+            // JavaScript code here
+            d3.select("#step1").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "cuarteron-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step2").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "cuarteron-2.png"); // Change image for step 2
+            });
+
+            // For the section with fiery images
+            d3.select("#step3").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "fiery-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step4").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "fiery-2.png"); // Change image for step 2
+            });
+            // For the section with gaven images
+            d3.select("#step5").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "gaven-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step6").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "gaven-2.png"); // Change image for step 2
+            });
+            // For the section with mischief images
+            d3.select("#step7").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "mischief-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step8").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "mischief-2.png"); // Change image for step 2
+            });
+            // For the section with subi images
+            d3.select("#step9").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "subi-1.png"); // Change image for step 1
+            });
+
+            d3.select("#step10").on('stepin', (e) => {
+                d3.select("#scrolly-images img").attr("src", "subi-2.png"); // Change image for step 2
+            });
+
+        });
+    </script>
+    <style>
+        /* Change this to adjust the padding between steps */
+        .step {
+            margin-bottom: 100vh;
+
+        }
+    </style>
+
+
+</body>
+
+</html>
