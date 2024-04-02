@@ -1,11 +1,11 @@
-### Nearly A Decade after the Philippines' Legal Victory: China's Continuing Militarization of the South China Sea
+# Nearly A Decade after the Philippines' Legal Victory: China's Continuing Militarization of the South China Sea
 ## Introduction
 In 2016, the Permanent Court of Arbitration in The Hague ruled in favor of the Philippines in a landmark case against China's territorial claims in the South China Sea. The court invalidated China's expansive claims, asserting that they were inconsistent with the United Nations Convention on the Law of the Sea (UNCLOS), to which both nations are signatories. Despite this legal victory, China persists in its militarization efforts and unauthorized presence in the Spratly Islands.
 
 This data project utilizes satellite imagery to illustrate the extent of China's militarization activities in the Spratly Islands. Additionally, it provides maps showcasing the Philippines' territorial baseline and Exclusive Economic Zone (EEZ).
 
 ## Data Sources
-# Map Coordinates:
+### Map Coordinates:
 - Republic Act 9522 (2009): Baseline coordinates
 - Flanders Maritime Boundaries database: Maritime zones
 Island Features Coordinates:
